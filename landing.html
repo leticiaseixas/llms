@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 2rem; }
-    .cta-button {
-      background: #0056b3; color: white; padding: 1rem 2rem;
-      text-decoration: none; border-radius: 5px;
-      display: inline-block; margin-top: 2rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admissions | University</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>Welcome to Your Dashboard</h2>
-  <p>You are now logged in. Explore your personalized space.</p>
-  <a href="index.html" class="cta-button">Logout</a>
+<header>
+  <a href="index.html" class="logo">UniLogo</a>
+</header>
+
+<main>
+  <section class="landing-hero">
+    <h1>Join Our University</h1>
+    <p>Your success starts here. Apply today!</p>
+  </section>
+
+  <section class="application-form">
+    <form id="applyForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="program">Program of Interest:</label>
+      <select id="program" required>
+        <option>Computer Science</option>
+        <option>Business Administration</option>
+        <option>Engineering</option>
+      </select>
+
+      <button type="submit">Submit Application</button>
+    </form>
+    <div id="formFeedback" aria-live="polite"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 University Admissions</p>
+</footer>
+
+<script src="scripts.js"></script>
 </body>
 </html>

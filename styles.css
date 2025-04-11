@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    line-height: 1.6;
+    background: #f4f7f9;
+  }
+  
+  header, footer {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0; margin: 0;
+    display: flex; justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a, .logo {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .hero, .landing-hero {
+    padding: 2rem; text-align: center;
+    background: #0055a5; color: #ffffff;
+  }
+  
+  .features {
+    display: flex; justify-content: space-around;
+    padding: 2rem;
+  }
+  
+  .features article {
+    width: 30%; padding: 1rem;
+    background: #ffffff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .btn {
+    display: inline-block; padding: 10px 20px; margin-top: 10px;
+    background: #ffcc00; color: #003366; text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .login-container, .application-form {
+    max-width: 400px; margin: 2rem auto; padding: 1.5rem;
+    background: #ffffff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  input, select, button {
+    width: 100%; padding: 8px; margin-top: 5px; margin-bottom: 15px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #003366; color: white; cursor: pointer; border: none; border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0055a5;
+  }
+  
+  @media (max-width: 768px) {
+    .features {
+      flex-direction: column; align-items: center;
+    }
+    .features article {
+      width: 80%; margin-bottom: 1rem;
+    }
+  }

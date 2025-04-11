@@ -1,31 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>University Home</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #00274d; color: white; padding: 1rem; }
-    .cta-button {
-      background: #0056b3; color: white; padding: 1rem 2rem;
-      text-decoration: none; border-radius: 5px;
-      display: inline-block; margin-top: 1rem;
-    }
-    .hero { padding: 2rem; text-align: center; background: #e5ecf5; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>University Logo</h1>
-  </header>
+<header>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="logo">UniLogo</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#admissions">Admissions</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="login.html">Student Login</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
   <section class="hero">
-    <h2>Welcome to Our University</h2>
-    <p>Empowering the future through knowledge and innovation.</p>
-    <a href="login.html" class="cta-button">Login</a>
+    <h1>Welcome to Our University</h1>
+    <p>Empowering your future through excellence.</p>
+    <a href="landing.html" class="btn">Apply Now</a>
   </section>
-  <footer>
-    <p>&copy; 2025 University Name</p>
-  </footer>
+
+  <section class="features">
+    <article>
+      <h2>Research</h2>
+      <p>Leading-edge research across disciplines.</p>
+    </article>
+    <article>
+      <h2>Campus Life</h2>
+      <p>An inclusive and vibrant community.</p>
+    </article>
+    <article>
+      <h2>Alumni</h2>
+      <p>Join a global network of achievers.</p>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 University. All rights reserved.</p>
+</footer>
 </body>
 </html>
